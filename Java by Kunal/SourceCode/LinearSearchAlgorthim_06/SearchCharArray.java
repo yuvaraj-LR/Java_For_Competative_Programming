@@ -1,0 +1,23 @@
+package SourceCode.LinearSearchAlgorthim_06;
+
+public class SearchCharArray {
+    public static void main(String[] args) {
+        String word = "Computer Science";
+        char target = 'p';
+        System.out.println(searchChar(word.toLowerCase(), target));
+    }
+
+    //Searching the target in word, If founded return the index of that item.
+    //Otherwise return -1
+    static boolean searchChar(String str, char tar){
+        if (str.length()==0)
+            return false;
+
+        for (int ch = 0; ch < str.length(); ch++) {
+            if (tar == str.charAt(ch))
+                return true;
+        }
+        return false;
+    }
+
+}
