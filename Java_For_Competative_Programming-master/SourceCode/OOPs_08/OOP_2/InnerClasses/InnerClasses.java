@@ -2,7 +2,7 @@ package SourceCode.OOPs_08.OOP_2.InnerClasses;
 
 public class InnerClasses {
     static class Test {
-        static String name;
+        String name;
 
         public Test(String name) {
             this.name = name;

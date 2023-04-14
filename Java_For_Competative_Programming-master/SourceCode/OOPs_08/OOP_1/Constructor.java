@@ -35,7 +35,7 @@ class Students {
     // This is the default constructor created when the object has been created.
 
     // this - is the keyword used to bind the values from object has been created.
-    // If the arguments name is = to object name "this" keyword seperates the names of
+    // If the arguments name is = to object name "this" keyword separates the names of
     // the name.
 
 //    Students() {
@@ -45,7 +45,7 @@ class Students {
 //    }
 
     //This is the way to declare the values in direct method.
-    //Used to improve the speed and effiency of the O/P.
+    //Used to improve the speed and efficiency of the O/P.
     Students() {
         this (21, "Yuvaa", 87.5f);
     }

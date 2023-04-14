@@ -14,4 +14,11 @@ public class Human {
         Human.population += 1;
     }
 
+//    public static void demo() {
+//        System.out.println(age);
+//    }
+
+
+
+
 }
