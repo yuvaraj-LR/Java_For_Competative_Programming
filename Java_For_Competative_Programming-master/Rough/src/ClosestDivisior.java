@@ -2,27 +2,28 @@ import java.util.ArrayList;
 
 public class ClosestDivisior {
     public static void main(String[] args) {
-        System.out.println(getElements(11));
+        System.out.println(nextGreaterElement(10));
     }
 
-    static ArrayList<Integer> getElements(int num) {
-        ArrayList<Integer> answerArray = new ArrayList<>(2);
-        // For the first Number.
-        for (int i = 1; i <= num/2; i++) {
-            int difference = 0;
+    public static ArrayList<Integer> nextGreaterElement(int num)
+    {
+        // Write your code here.
+        ArrayList<Integer> ans = new ArrayList<>();
 
-            // For the second Number.
-            for (int j = 1; j <= num/2; j++) {
-                if (i * j == num) {
-                    if (j - i > difference) {
-                        difference = j - i;
-                        answerArray.add(i);
-                        answerArray.add(j);
-                    }
-                }
+        for (int i=(int) (Math.sqrt(num+2)); i>=1; i--) {
+            if ((num+2)%i == 0) {
+                ans.set(0, i);
+                ans.set(1, (num+2)/i);
+                break;
+            }
+
+            if ((num+1)%i == 0) {
+                ans.set(0, i);
+                ans.set(1, (num+1)/i);
+                break;
             }
         }
 
-        return answerArray;
+        return ans;
     }
 }
